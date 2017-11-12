@@ -3,47 +3,47 @@
     <head>
         <meta charset="utf-8">
         <title>MyShop - Магазин свободной торговли</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         
 <!-- Шапка -->
-        <div align="center" style="background:lightblue; border-radius: 12px">
+        <div class="header">
             <h1><em>MyShop</em></h1>
             <p><strong>Интерактивная торговая площадка</strong></p>
         </div>
-        
+        <br>
 <!-- Навигация -->
         <div>
-            <table width="600" align="center" style="background:lightgrey; border-radius: 6px">
+            <table class="navi">
                 <tr>
-                    <td align="center" width="100">
+                    <td>
                         <a href="index.html" target="_self">Главная</a>
                     </td>
-                    <td  align="center" width="100">
+                    <td>
                         <a href="catalog.html">Каталог</a>
                     </td>
-                    <td  align="center" width="100">
+                    <td>
                         <a href="registration.html">Регистрация</a>
                     </td>
-                    <td  align="center" width="100">
+                    <td>
                         <a href="contacts.html">Контакты</a>
                     </td>
-                    <td  align="center" width="100">
+                    <td>
                         <a href="account.html">Личный кабинет</a>
                     </td>
                 </tr>
             </table>
         </div>
+        <br>
 <!-- Основной контент -->
-        <table align="center" width="600">
+        <table class="content">
             <tr>
                 <td>
  <!-- навигация по каталогу -->
-                    <table width="200" style="background:lightblue; border-radius: 6px">
-                        <tr height="200">
-                            <td>
+                    <div class="content_navi">
                                 <div >
-                                    <h4 align="center">Разделы каталога</h4>
+                                    <h4>Разделы каталога</h4>
                                     <ul type="square">
                                         <li><a href="">Бытовая техника</a></li>
                                         <li><a href="">Аудио Видео</a></li>
@@ -53,16 +53,13 @@
                                         <li><a href="">Спорт Туризм</a></li>
                                     </ul>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr height="200"></tr>
-                    </table>
+                    </div>
                 </td>
 <!-- Товары в контенте -->
                 <td>
-                <table width="400">
-                    <tr height="200">
-                        <td width="200" style="background:#c0d9dc; border-radius: 6px; border-radius: 6px">
+                <table class="content_item">
+                    <tr>
+                        <td>
                             <div>
                                 <small>Видеокарта MSI GeForce GTX 1070Ti, GTX 1070 Ti GAMING 8G, 8Гб, GDDR5, Ret</small>
                             </div>
@@ -74,7 +71,7 @@
                             </center>
                             <p><strong>37 590 руб.</strong></p>
                         </td>
-                        <td width="200" style="background:#c0d9dc; border-radius: 6px; border-radius: 6px">
+                        <td>
                              <div>
                                 <small>Мультиварка-скороварка REDMOND RMC-PM380, 1000Вт, серебристый/черный</small>
                             </div>
@@ -87,8 +84,8 @@
                             <p><strong>5500 руб.</strong></p>
                         </td>
                     </tr>
-                    <tr height="200">
-                        <td width="200" style="background:#c0d9dc; border-radius: 6px; border-radius: 6px">
+                    <tr>
+                        <td>
                              <div>
                                 <small>LED телевизор SAMSUNG UE32M5000AKXRU "R", 32", FULL HD (1080p), черный</small>
                             </div>
@@ -100,7 +97,7 @@
                             </center>
                             <p><strong>19 990 руб.</strong></p>
                         </td>
-                        <td width="200" style="background:#c0d9dc; border-radius: 6px; border-radius: 6px">
+                        <td>
                              <div>
                                 <small>Кресло игровое AEROCOOL AC80C-BR, на колесиках, кожа, черный/красный [428388]</small>
                             </div>

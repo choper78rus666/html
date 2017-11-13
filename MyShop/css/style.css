@@ -1,10 +1,11 @@
 body {
+    margin: auto;
     min-width: 600px;
 }
 
 a {
     text-decoration: none;
-    color:black;
+    color:darkslategray;
     opacity: 0.8;
 }
 
@@ -13,16 +14,13 @@ a:hover {
     opacity: 1;
 }
 
-a:active {
-    color:gray;
-}
 
 /*Header*/
 .header {
     text-align:center;
     background:lightblue;
-    border-radius: 12px;
-    border: solid 1px #9E9E9E;
+    border-top: solid 1px blue;
+    border-bottom: solid 1px blue;
 }
 
 /*Navigation*/
@@ -82,6 +80,18 @@ a:active {
     border:solid 2px lightgrey;
     border-bottom:solid 2px darkgrey;
     border-right:solid 2px grey;
+}
+
+.content_item a{
+    display: block;
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+    background: lightblue;
+    border-top: solid 1px blue;
+    border-bottom: solid 1px blue;
 }
 
 /*каталог*/

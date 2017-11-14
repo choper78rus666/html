@@ -144,3 +144,33 @@ a:hover {
 #info {
     resize: none;
 }
+
+/*контакты*/
+.center {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.left_block {
+    float: left;
+    width: 50%;
+}
+
+.left_block img {
+    width: 20px;
+}
+
+.right_block img {
+    width:50%;
+    border:solid 2px grey;
+}
+
+.right_block {
+    width:400px;
+    height:300px;
+}
+
+.maps {
+    width: 400px;
+    margin: 0 auto;
+}

@@ -1,6 +1,7 @@
+@import "grid.css";
+
 body {
-    margin: auto;
-    min-width: 600px;
+      margin: 0 auto;
 }
 
 a {
@@ -24,6 +25,36 @@ a:hover {
 }
 
 /*Navigation*/
+.navic {
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+.nav {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.nav_but {
+    width: 120px;
+    text-align: center;
+}
+
+.nav_but a {
+    border: solid 1px black;
+    border-radius: 3px;
+    background:lightgrey;
+    display: block;
+}
+
+.menu {
+    width:360px;
+}
+
+.menu2 {
+    width: 240px;
+}
+
 .navi {
     width:600px;
     margin: 0 auto; 

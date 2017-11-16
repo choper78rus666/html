@@ -78,7 +78,8 @@ a:hover {
 
 /*Основной контент*/
 .content {
-    width: 600px;
+    max-width: 600px;
+    min-width: 440px;
     margin: 0 auto;
 }
 

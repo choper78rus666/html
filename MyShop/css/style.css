@@ -22,17 +22,20 @@ a:hover {
     background:lightblue;
     border-top: solid 1px blue;
     border-bottom: solid 1px blue;
+    
+    min-width: 440px;
 }
 
 /*Navigation*/
 .navic {
     margin: 0 auto;
-    max-width: 50%;
+    max-width:720px;
+    min-width: 440px;
 }
 
 .nav {
-    max-width: 720px;
     margin: 0 auto;
+    
 }
 
 .nav_but {
@@ -48,11 +51,14 @@ a:hover {
 }
 
 .menu {
-    width:360px;
+    margin: 0 auto;
+}
+.menu ul {
+    text-align: center;
 }
 
-.menu2 {
-    width: 240px;
+.menu li {
+    display: inline-block;
 }
 
 .navi {

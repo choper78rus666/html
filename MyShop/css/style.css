@@ -39,7 +39,8 @@ a:hover {
 }
 
 .nav_but {
-    width: 120px;
+    width: 118px;
+    margin: 1px 1px;
     text-align: center;
 }
 

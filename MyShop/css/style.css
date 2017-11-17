@@ -77,7 +77,7 @@ a:hover {
 
 /*Основной контент*/
 .content {
-    max-width: 720px;
+    max-width: 600px;
     min-width: 440px;
     margin: 0 auto;
     border: gray;
@@ -85,8 +85,7 @@ a:hover {
 
 /*навигация в контенте*/
 .content_navi {
-    max-width:200px;
-    
+    max-width: 200px;
     background: lightgrey;
     border-bottom: solid 3px darkgrey;
     border-right: solid 3px grey;
@@ -113,19 +112,27 @@ a:hover {
 
 /*товары на главной*/
 .content_item {
-    min-width: 440px;
-    max-width: 600px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.content_center {
     margin: 0 auto;
 }
 
 .items {
-    max-width: 200px;
     background: #e0f0f0;
     border-radius: 6px;
     border:solid 2px lightgrey;
     border-bottom:solid 2px darkgrey;
     border-right:solid 2px grey;
 }
+
+.sizer {
+    min-width:200px;
+}
+
+
 
 .content_item a {
     display: block;

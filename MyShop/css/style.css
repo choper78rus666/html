@@ -17,12 +17,11 @@ a:hover {
 
 
 /*Header*/
-.header {
+.header, #footer {
     text-align:center;
     background:lightblue;
     border-top: solid 1px blue;
     border-bottom: solid 1px blue;
-    
     min-width: 440px;
 }
 
@@ -78,19 +77,19 @@ a:hover {
 
 /*Основной контент*/
 .content {
-    max-width: 600px;
+    max-width: 720px;
     min-width: 440px;
     margin: 0 auto;
+    border: gray;
 }
 
 /*навигация в контенте*/
 .content_navi {
-    width:200px;
-    height:400px;
-    margin-top:auto;
-    background:lightgrey;
-    border-bottom:solid 3px darkgrey;
-    border-right:solid 3px grey;
+    max-width:200px;
+    
+    background: lightgrey;
+    border-bottom: solid 3px darkgrey;
+    border-right: solid 3px grey;
     border-radius: 6px;
 }
 
@@ -101,36 +100,36 @@ a:hover {
     text-align: center;
     height:30px;
     padding-top:10px;
+    margin-top: 0; 
 }
 
 .content_navi ul {
     color: gray;
 }
 
-/*товары на главной*/
-.content_item {
-    height:400px;
+.content_navi li a {
+    text-align: left;
 }
 
-.content_item td {
-    width:200;
-    background:#e0f0f0;
+/*товары на главной*/
+.content_item {
+    min-width: 440px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.items {
+    max-width: 200px;
+    background: #e0f0f0;
     border-radius: 6px;
     border:solid 2px lightgrey;
     border-bottom:solid 2px darkgrey;
     border-right:solid 2px grey;
 }
 
-.content_item a{
+.content_item a {
     display: block;
     text-align: center;
-}
-
-#footer {
-    text-align: center;
-    background: lightblue;
-    border-top: solid 1px blue;
-    border-bottom: solid 1px blue;
 }
 
 /*каталог*/

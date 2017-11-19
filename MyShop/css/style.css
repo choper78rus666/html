@@ -28,8 +28,8 @@ a:hover {
 /*Navigation*/
 .navic {
     margin: 0 auto;
-    max-width: 720px;
-    min-width: 530px;
+    max-width: 900px;
+    min-width: 590px;
 }
 
 .navics {
@@ -206,5 +206,116 @@ a:hover {
 
 .maps {
     width: 400px;
+    margin: 0 auto;
+}
+
+.button_flex a{
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    text-shadow: 2px 2px 2px red;
+    font-size: 20px;
+    padding-top: 3px;
+    position: fixed;
+    top: 50;
+    right: 50;
+    background: lightgreen;
+    border: 2px solid red;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 2px 2px 3px 2px black;
+}
+/*Flex Главная страница*/
+/*Header*/
+.flex_header,
+.flex_footer {
+    min-width: 600px;
+    background:lightblue;
+    border-top: solid 1px blue;
+    border-bottom: solid 1px blue;
+}
+
+.flex_width {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+.row_container {
+    display: flex;
+}
+
+.center_flex {
+    justify-content: center;
+}
+
+.direction_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.direction_row {
+    flex-direction: row;
+}
+
+.flex_nav_but {
+    flex: 5;
+    margin: 1px 1px;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 3px;
+    background:lightgrey;
+}
+
+.flex2 {
+    flex:2;
+}
+
+.flex1 {
+    flex:1;
+}
+
+.flex_content {
+    max-width:900px;
+    min-width: 400px;
+    margin: 0 auto;
+    border: gray;
+}
+
+/*навигация в контенте*/
+.flex_content_navi {
+    min-width: 195px;
+    max-width: 300px;
+    height: 400px;
+    background: lightgrey;
+    border-bottom: solid 3px darkgrey;
+    border-right: solid 3px grey;
+    border-radius: 6px;
+}
+
+.flex_content_navi h4 {
+    background: darkgrey;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    text-align: center;
+    height:30px;
+    padding-top:10px;
+    margin-top: 0; 
+}
+
+.flex_content_navi ul {
+    color: gray;
+}
+
+.flex_content_navi li a {
+    text-align: left;
+}
+
+.sizer_item {
+    min-width: 200px;
+    max-width: 300px;
+    height: 198px;
+}
+
+.items img {
+    display: block;
     margin: 0 auto;
 }

@@ -210,8 +210,8 @@ a:hover {
 }
 
 .button_flex a{
-    height: 50px;
-    width: 200px;
+    height: 200px;
+    width: 50px;
     text-align: center;
     text-shadow: 2px 2px 2px red;
     font-size: 20px;
@@ -224,7 +224,9 @@ a:hover {
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
     box-shadow: 2px 2px 3px 2px black;
+    writing-mode: tb-rl;
 }
+
 /*Flex Главная страница*/
 /*Header*/
 .flex_header,

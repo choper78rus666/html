@@ -22,20 +22,20 @@ a:hover {
     background:lightblue;
     border-top: solid 1px blue;
     border-bottom: solid 1px blue;
-    min-width: 490px;
+    min-width: 440px;
 }
 
 /*Navigation*/
 .navic {
     margin: 0 auto;
     max-width: 720px;
-    min-width: 400px;
+    min-width: 440px;
 }
 
 .navics {
     margin: 0 auto;
-    max-width: 1200px;
-    min-width: 490px;
+    max-width: 100%;
+    margin-left:20px;
 }
 
 .nav_but {

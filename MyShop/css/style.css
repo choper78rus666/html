@@ -261,7 +261,7 @@ a:hover {
     flex-direction: row;
 }
 
-.flex_nav_but {
+.flex_nav_but a{
     flex: 5;
     margin: 1px 1px;
     text-align: center;
@@ -269,6 +269,13 @@ a:hover {
     border-radius: 3px;
     background:lightgrey;
 }
+
+.flex_nav_but {
+    flex: 5;
+    margin: 1px 1px;
+    display: flex;
+}
+
 
 .flex2 {
     flex:2;

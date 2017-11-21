@@ -22,20 +22,20 @@ a:hover {
     background:lightblue;
     border-top: solid 1px blue;
     border-bottom: solid 1px blue;
-    min-width: 530px;
+    min-width: 490px;
 }
 
 /*Navigation*/
 .navic {
     margin: 0 auto;
-    max-width: 900px;
-    min-width: 590px;
+    max-width: 720px;
+    min-width: 400px;
 }
 
 .navics {
     margin: 0 auto;
-    max-width: 1220px;
-    min-width: 530px;
+    max-width: 1200px;
+    min-width: 490px;
 }
 
 .nav_but {
@@ -52,6 +52,7 @@ a:hover {
 }
 
 .menu {
+    min-width: 400px;
     margin: 0 auto;
 }
 .menu ul {
@@ -66,10 +67,11 @@ a:hover {
 /*Основной контент*/
 .content {
     position: relative;
-    max-width:620px;
+    right: 8;
+    max-width: 620px;
     min-width: 440px;
-    margin: 0 auto;
     border: gray;
+    margin: 0 auto;
 }
 
 /*навигация в контенте*/
@@ -120,7 +122,8 @@ a:hover {
 }
 
 .sizer {
-    min-width:200px;
+    width:196px;
+    margin: 2px;
 }
 
 .content_item a {
@@ -275,6 +278,12 @@ a:hover {
     flex:1;
 }
 
+.flex_navic {
+    margin: 0 auto;
+    max-width: 900px;
+    min-width: 600px;
+}
+
 .flex_content {
     max-width:900px;
     min-width: 400px;
@@ -286,7 +295,7 @@ a:hover {
 .flex_content_navi {
     min-width: 195px;
     max-width: 300px;
-    height: 400px;
+    height: 405px;
     background: lightgrey;
     border-bottom: solid 3px darkgrey;
     border-right: solid 3px grey;
@@ -315,6 +324,7 @@ a:hover {
     min-width: 200px;
     max-width: 300px;
     height: 198px;
+    margin: 2px;
 }
 
 .items img {

@@ -2,7 +2,9 @@
 @import "normalize.css";
 
 body {
-      margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
+    background-color: #63b3a1;
 }
 
 a {
@@ -67,12 +69,18 @@ a:hover {
 
 /*Основной контент*/
 .content {
-    position: relative;
     right: 8;
     max-width: 620px;
     min-width: 440px;
     border: gray;
-    margin: 0 auto
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.content_position {
+    position: relative;
+    max-width: 620px;
+    margin: 0 auto;
 }
 
 /*навигация в контенте*/
@@ -232,19 +240,30 @@ a:hover {
 }
 
 /*Flex Главная страница*/
+
 /*Header*/
 .flex_header,
 .flex_footer {
     min-width: 600px;
-    background:lightblue;
+    background: lightblue;
     border-top: solid 1px blue;
     border-bottom: solid 1px blue;
 }
 
+.flex_footer {
+    position: absolute;
+    padding: 10px 0;
+    height:20px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
 .flex_width {
-    max-width: 2000px;
+    max-width: 100%;
     margin: 0 auto;
 }
+
 .row_container {
     display: flex;
 }
@@ -262,6 +281,11 @@ a:hover {
     flex-direction: row;
 }
 
+.flex_navic {
+        margin: 0 auto;
+        max-width: 900px;
+}
+
 .flex_nav_but a{
     flex: 5;
     margin: 1px 1px;
@@ -273,10 +297,9 @@ a:hover {
 
 .flex_nav_but {
     flex: 5;
-    margin: 1px 1px;
+    margin: 2px 1px;
     display: flex;
 }
-
 
 .flex2 {
     flex:2;
@@ -286,20 +309,13 @@ a:hover {
     flex:1;
 }
 
-.flex_navic {
-    margin: 0 auto;
-    max-width: 900px;
-    min-width: 600px;
-}
-
-.flex_content {
-    max-width:900px;
-    min-width: 400px;
-    margin: 0 auto;
-    border: gray;
-}
-
 /*навигация в контенте*/
+.flex_content {
+        max-width:900px;
+        margin: 0 auto;
+        border: gray;
+}
+
 .flex_content_navi {
     min-width: 195px;
     max-width: 300px;
@@ -338,4 +354,48 @@ a:hover {
 .items img {
     display: block;
     margin: 0 auto;
+}
+
+@media (max-width:760px) {
+    .flex_header,
+    .flex_footer {
+        min-width: 260px;
+        background: lightblue;
+        border-top: solid 1px blue;
+        border-bottom: solid 1px blue;
+    }
+
+    .flex2.row_container {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+
+    .flex_navic.direction_row {
+        margin: 0 auto;
+        width: 250px;
+        height: 130px;
+        flex-direction: column;
+    }
+    
+    .flex_content {
+        max-width: 600px;
+        margin: 0 auto;
+        border: gray;
+    }
+    
+    .flex1.sizer_item {
+        
+        display: none;
+    }
+
+}
+
+
+@media (max-width:420px) {
+    .flex_content {
+    max-width: 300px;
+    margin: 0 auto;
+    border: gray;
+    }
 }

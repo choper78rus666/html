@@ -16,35 +16,48 @@ url("https://use.typekit.com/af/a1d110/000000000000000000017087/27/l?subset_id=2
 url("https://use.typekit.com/af/a1d110/000000000000000000017087/27/l?subset_id=2&fvd=n4&v=3") format("opentype"); 
 }
 
+a {
+    text-decoration-line: none;
+}
+
+h1,
+h2 {
+    font-family: "ff-tisa-web-pro";
+    font-style: italic;
+    font-weight: 100;
+}
+
 /* Тело - Вся страничка в контейнере */
 .container {
     width: 896px;
-    padding: 40px;
+    padding: 30px;
     margin: 0 auto;
 }
 
 /* Шапка - навигация и слайдер */
 .header {
+    position: relative;
     display:grid;
     grid-auto-rows: minmax(auto, auto);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .logo {
-    width: 120px;
+    width: 140px;
     height: 120px;
     background: url(../images/food_sense_logo.png);
+    margin-top: 20px;
 }
 
 .logo {
-    grid-column: 1/3;
-    grid-row: 1;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .main {
     width: 130px;
-    grid-column: 1;
-    grid-row: 2;
+    grid-column: 1/2;
+    grid-row: 2/6;
 }
 
 .main a {
@@ -107,7 +120,7 @@ url("https://use.typekit.com/af/a1d110/000000000000000000017087/27/l?subset_id=2
 
 .slider ul {
     position: relative;
-    width: 712px;
+    width: 711px;
     height: 446px;
     overflow: hidden;
 }
@@ -119,7 +132,7 @@ url("https://use.typekit.com/af/a1d110/000000000000000000017087/27/l?subset_id=2
     background-repeat: no-repeat;
     background-size: cover;
     list-style-type: none;
-    animation: sliders 12s infinite;
+    animation: sliders 16s infinite;
    
 }
 
@@ -153,80 +166,155 @@ url("https://use.typekit.com/af/a1d110/000000000000000000017087/27/l?subset_id=2
 
 
 @keyframes sliders {
-    0%{top: 0%;
+    0%{
         position: relative;
+        top: 0%;
         visibility: visible;
     }
-    24.9%{top: 0%;
+    24.9%{
         position: relative;
+        top: 0%;
         visibility: hidden;
     }
-    25%{top: -100%;
+    25%{
         position: relative;
+        top: -100%;
         visibility: visible;
     }
-    49.9%{position: relative;
+    49.9%{
+        position: relative;
         top: -100%;
         visibility: hidden;
     }
-    50%{position: relative;
-    top: -200%;
+    50%{
+        position: relative;
+        top: -200%;
         visibility: visible;
         
     }
-    74.9%{position: relative;
+    74.9%{
+        position: relative;
         top: -200%;
         visibility: hidden;
     }
-    75%{position: relative;
-    top: -300%;
+    75%{
+        position: relative;
+        top: -300%;
         visibility: visible;
     }
-    100% {position: relative;
-    top: -300%;
-       visibility: hidden;
+    100% {
+        position: relative;
+        top: -300%;
+        visibility: hidden;
     }
     
 }
 
-
-/*
-@keyframes slide1 {
-    1%,100%{
-    visibility: visible;
-    position: relative;
-    top: 0;
-    background-image: url(../images/slide1.jpg);
-    }
+.link-right a:hover h1,
+.link-right a:hover h2,
+.link-left a:hover h1,
+.link-left a:hover h2 {
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
 }
 
-@keyframes slide2 {
-    1%,100%{
-    visibility: visible;
-    position: relative;
-    top: -100%;
-    background-image: url(../images/slide2.jpg);
-    }
+.link-right h1 {
+    position: absolute;
+    top: 280px;
+    padding: 6px 24px 10px;
+    color: #222;
+    background: #FFF;
+    font-size: 1.5em;
+    left: auto;
+    right: 0px;
 }
 
-@keyframes slide3 {
-    1%,100%{
-    visibility: visible;
-    position: relative;
-    top: -200%;
-    background-image: url(../images/slide3.jpg);
-    }
+.link-right h2 {
+    position: absolute;
+    top: 337px;
+    padding: 8px 24px 12px;
+    color: #E9E9E9;
+    font-weight: normal;
+    font-size: 1em;
+    background: #111;
+    left: auto;
+    right: 0px;
 }
 
-@keyframes slide4 {
-    1%,100%{
-    visibility: visible;
-    position: relative;
-    top: -300%;
-    background-image: url(../images/slide4.jpg);
-    }
+.link-left h1 {
+    position: absolute;
+    top: 280px;
+    padding: 6px 24px 10px;
+    color: #222;
+    background: #FFF;
+    font-size: 1.5em;
 }
-*/
+
+.link-left h2 {
+    position: absolute;
+    top: 337px;
+    padding: 8px 24px 12px;
+    color: #E9E9E9;
+    font-weight: normal;
+    font-size: 1em;
+    background: #111;
+}
+
+.autor {
+    position: absolute;
+    right: 14px;
+    top: 428px;
+    padding: 4px 10px 4px;
+    font-size: .5em;
+    color: #555;
+    background: #F5F5F5;
+    background: rgba(255,255,255,.5);
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.autor a {
+    border-bottom: none;
+    background: none;
+    color: #555;
+}
+
+.autor a:hover {
+    color: #EC6635;
+}
+
+.nav-slider {
+    grid-column: 2/3;
+    grid-row: 6;
+}
+
+.nav-slider {
+    position: relative;
+    bottom: 46px;
+}
+
+.nav-slider li {
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.nav-slider a h3 {
+    width: 177px;
+    margin-right: -3px;
+    padding: 10px 0px 10px;
+    font-size: .875em;
+    font-weight: 100;
+    background: #D9EFEC;
+    text-shadow: 0 1px 0 #FFF;
+    color:#34AC98;
+}
+
+.nav-slider a:hover h3 {
+    color:#EC6635;
+}
 
 /*Контент страницы*/
 .content {

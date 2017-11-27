@@ -105,56 +105,92 @@ url("https://use.typekit.com/af/a1d110/000000000000000000017087/27/l?subset_id=2
     grid-column: 2;
 }
 
-.slider ul{
+.slider ul {
     position: relative;
     width: 712px;
     height: 446px;
+    overflow: hidden;
 }
 
 .slider li {
+    position: relative;
     width: 712px;
     height: 446px;
     background-repeat: no-repeat;
     background-size: cover;
     list-style-type: none;
-    visibility: hidden;
+    animation: sliders 12s infinite;
+   
 }
 
 .slide1 {
-    animation: slide1 2s forwards;
+    background-image: url(../images/slide1.jpg);
+    visibility: hidden;
+/*     animation: sliders 4s infinite;*/
+/*    animation: slide1 2s forwards;*/
 }
 
 .slide2 {
-    animation: slide2 2s forwards 2s;
+    background-image: url(../images/slide2.jpg);
+    visibility: hidden;
+/*     animation: sliders 4s infinite 4s;*/
+/*    animation: slide2 2s forwards 2s;*/
 }
 
 .slide3 {
-    animation: slide3 2s forwards 4s;
+    background-image: url(../images/slide3.jpg);
+    visibility: hidden;
+/*     animation: sliders 4s infinite 8s;*/
+/*    animation: slide3 2s forwards 4s;*/
 }
 
 .slide4 {
-    animation: slide4 2s forwards 6s;
+    background-image: url(../images/slide4.jpg);
+    visibility: hidden;
+/*     animation: sliders 4s infinite 12s;*/
+/*    animation: slide4 2s forwards 6s;*/
 }
+
+
+@keyframes sliders {
+    0%{top: 0%;
+        position: relative;
+        visibility: visible;
+    }
+    24.9%{top: 0%;
+        position: relative;
+        visibility: hidden;
+    }
+    25%{top: -100%;
+        position: relative;
+        visibility: visible;
+    }
+    49.9%{position: relative;
+        top: -100%;
+        visibility: hidden;
+    }
+    50%{position: relative;
+    top: -200%;
+        visibility: visible;
+        
+    }
+    74.9%{position: relative;
+        top: -200%;
+        visibility: hidden;
+    }
+    75%{position: relative;
+    top: -300%;
+        visibility: visible;
+    }
+    100% {position: relative;
+    top: -300%;
+       visibility: hidden;
+    }
+    
+}
+
 
 /*
-@keyframes slide1 {
-    0%,
-    25% {
-        background-image: url(../images/slide1.jpg);
-    }
-    25%,50% {
-        background-image: url(../images/slide2.jpg);
-    }
-    50%,75%{
-        background-image: url(../images/slide3.jpg);
-    }
-    75%,100%{
-        background-image: url(../images/slide4.jpg);
-    }
-}
-*/
-
-
 @keyframes slide1 {
     1%,100%{
     visibility: visible;
@@ -190,7 +226,7 @@ url("https://use.typekit.com/af/a1d110/000000000000000000017087/27/l?subset_id=2
     background-image: url(../images/slide4.jpg);
     }
 }
-
+*/
 
 /*Контент страницы*/
 .content {

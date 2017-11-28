@@ -27,6 +27,7 @@ a:hover {
 
 body{
     color: #333;
+    font-family: ff-tisa-web-pro, Georgia, sans-serif;
 }
 
 h1,
@@ -511,11 +512,73 @@ a .img4 {
 }
 
 .text-block {
+    font-size: .875em;
+    line-height: 1.45em;
+}
+
+.text-block p{
+    color: #aaa;
+}
+
+.text-block a {
+    border-bottom: 1px dashed #E5E5E5;
     font-size: .96em;
     line-height: 1.25em;
 }
 
+.text-block a:hover {
+    background: #EFF8F7;
+}
+
 /*Футер*/
 .footer {
-    
+    grid-column: 1/3;
+    grid-row: auto;
+}
+
+.footer-box {
+    position: relative;
+    min-height: 70px;
+    padding-top: 20px;
+    border-top: 2px solid #E5E5E5;
+    color: #AAA;
+}
+
+.social-link {
+    line-height: 1.5em;
+    font-size: .75em;
+}
+
+.social-img {
+   margin-top:-40px;
+}
+
+.twitter a {
+    display: inline-block;
+    background: url(../images/twitter2.png) no-repeat;
+    width: 50px;
+    height: 40px;
+    opacity: 0.6;
+    float:right;
+}
+
+.facebook a{
+    display: inline-block;
+    background: url(../images/facebook2.png) no-repeat;
+    width: 50px;
+    height: 30px;
+    opacity: 0.6;
+    float:right;
+}
+
+.rss a{
+    display: inline-block;
+    background: url(../images/rss.png) no-repeat;
+    width: 50px;
+    height: 40px;
+    opacity: 0.6;
+    float:right;
+}
+.social-img a:hover {
+    opacity: 1;
 }

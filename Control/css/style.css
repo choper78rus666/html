@@ -606,19 +606,41 @@ a .img4 {
         grid-column: 1/2;
         grid-row: 1/2;
         margin-top: 10px;
-        margin-left: 40px;
+/*        margin-left: 40px;*/
     }
 
     .main {
         width: 100%;
-        grid-column: 2/4;
+        grid-column: 1/4;
         grid-row: 1/2;
     }
     
     .main li {
         display: inline-block;
-        margin-top: 0px;
+        position: relative;
+        left: 200px;
+        top: 40px;
+        margin-left: 30px;
         list-style-type: none;
+    }
+    
+    .main a div {
+        height: 35px;
+        width: 33px;
+        position: relative;
+        margin: auto;
+        left: 0px; 
+        top: 0px;
+    }
+    
+    a:hover .link1,
+    a:hover .link2,
+    a:hover .link3,
+    a:hover .link4,
+    a:hover .link5 {
+       
+        top: 4px;
+        transition: top 0.3s ease;
     }
     
     .tweet {
@@ -628,11 +650,12 @@ a .img4 {
     .slider {
         grid-column: 1/4;
         grid-row: 2/6;
+        margin-left: -40px;
     }
     
     .autor {
         position: absolute;
-        right: -30px;
+/*        right: -30px;*/
         top: 555px;
     }
     
@@ -640,6 +663,15 @@ a .img4 {
         grid-column: 1/4;
         grid-row: 5;
         width: 100%;
+    }
+    
+    ul.nav-slider {
+        padding: 0px;
+    }
+    
+    .email-form {
+        margin-left: 0px;
+        margin-right: 0px;
     }
     
     .email-box {
@@ -654,10 +686,14 @@ a .img4 {
         width: 712px;
         }
     
+    .content-box {
+        padding: 0px;
+    }
+
     .footer {
         grid-column: 1/4;
         grid-row: 9;
         width: 100%;
-        margin-left: 40px;
+/*        margin-left: 40px;*/
         }
 }

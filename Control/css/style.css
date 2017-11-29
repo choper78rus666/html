@@ -598,7 +598,7 @@ a .img4 {
     .container {
         padding-top: 0px;
         padding-left: 0px;
-        width: 712px;
+        width: 690px;
         margin: 0 auto;
 }
     
@@ -660,7 +660,7 @@ a .img4 {
     .nav-slider {
         grid-column: 1/4;
         grid-row: 5;
-        width: 100%;
+        width: 712px;
     }
     
     ul.nav-slider {
